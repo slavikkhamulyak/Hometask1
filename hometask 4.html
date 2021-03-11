@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    const credits = 23580;
+    const pricePerDroid = 3000;
+    let totalPrice;
+    let message;
+
+    var guess = prompt('Вкажіть, яку кількість дронів Ви хочете придбати');
+    if (guess === null) {
+      message = 'Отменено пользователем!';
+    } 
+    
+    totalPrice = guess * 3000;
+    if (guess === null) {
+      message = 'Отменено пользователем!';
+    } else if (totalPrice > credits) {
+      message = 'Недостаточно средств на счету!';
+    } else {
+      message = `Вы купили ${guess} дроидов, на счету осталось ${(credits - totalPrice)} кредитов.`
+    }
+    
+    alert(message);
+  </script>
+  
+</body>
+</html>

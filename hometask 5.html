@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    var guess = prompt('Введіть назву потрібної країни');
+
+    switch (guess.toLowerCase()) {
+      case 'китай':
+      alert(`Доставка в ${guess} будет стоить 100 кредитов`);
+      break;
+      case 'чилі':
+      alert(`Доставка в ${guess} будет стоить 250 кредитов`);
+      break;
+      case 'австралія':
+      alert(`Доставка в ${guess} будет стоить 170 кредитов`);
+      break;
+      case 'індія':
+      alert(`Доставка в ${guess} будет стоить 80 кредитов`);
+      break;
+      case 'ямайка':
+      alert(`Доставка в ${guess} будет стоить 120 кредитов`);
+      break;
+
+      default:
+        alert('В вашей стране доставка не доступна');
+    }
+  </script>
+  
+</body>
+</html>
